@@ -1,0 +1,10 @@
+# port assignment available at http://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.xhtml
+# the Well known ports are those from 0 -> 1023
+# the Registered ports are those from 1024 -> 49151
+# the Dynamic and/or Private ports are those from 49152 -> 65535
+
+# last updated 2016-09-01
+wget www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.csv
+
+# columns
+Service Name,Port Number,Transport Protocol,Description,Assignee,Contact,Registration Date,Modification Date,Reference,Service Code,Known Unauthorized Uses,Assignment Notes

@@ -1,0 +1,11 @@
+#!/bin/sh
+
+# debug
+#/usr/sbin/logrotate -d /etc/cron.mining/conf.d/firewall.conf 2> /tmp/logrotate.debug
+
+/usr/sbin/logrotate /etc/cron.mining/conf.d/firewall.conf
+EXITVALUE=$?
+if [ $EXITVALUE != 0 ]; then
+    /usr/bin/logger -t logrotate "ALERT exited abnormally with [$EXITVALUE]"
+fi
+exit 0
